@@ -1,7 +1,7 @@
-# flutter_assessment
+# Stock Trade Flutter App
 
 A new Flutter project.
-
+![](lib/screenshots/home_screen.jpeg)
 ## Getting Started
 
 This project is a starting point for a Flutter application.
