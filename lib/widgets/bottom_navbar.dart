@@ -1,5 +1,7 @@
+//packages
 import 'package:flutter/material.dart';
 
+//constants
 import '../constants/constants.dart';
 
 class BottomNavBaR extends StatelessWidget {
@@ -13,7 +15,7 @@ class BottomNavBaR extends StatelessWidget {
         showUnselectedLabels: true,
         selectedFontSize: 10,
         unselectedFontSize: 10,
-        items: (bottom_navbar_name.entries)
+        items: (bottom_navbar_name.entries)//bottom navigation bar names & icons
             .map((item) => BottomNavigationBarItem(
                 icon: Icon(item.key), label: item.value))
             .toList()

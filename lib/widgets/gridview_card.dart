@@ -11,7 +11,8 @@ class GridViewCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: grid_view_light_color[index], //gridview item background color
+          color: gridViewItem[index]
+              .lightColor, //gridview item background(light) color
           borderRadius: const BorderRadius.all(Radius.circular(5))),
       child: Padding(
         padding: const EdgeInsets.all(16),
@@ -24,15 +25,16 @@ class GridViewCard extends StatelessWidget {
                 radius: 25,
                 backgroundColor: Colors.white,
                 child: Icon(
-                  grid_view_icon[index], //gridview item icon
-                  color: grid_view_icon_color[index], //gridview item icon color
+                  gridViewItem[index].icon, //gridview item icon
+                  color:
+                      gridViewItem[index].iconColor, //gridview item icon color
                   size: 30,
                 ),
               ),
             ),
             const Spacer(),
             Text(
-              grid_view_name[index], //gridview item title
+              gridViewItem[index].title, //gridview item title
               style: const TextStyle(
                   fontWeight: FontWeight.w900,
                   fontSize: 23,
@@ -42,10 +44,11 @@ class GridViewCard extends StatelessWidget {
               height: 5,
             ),
             Text(
-              grid_view_subname[index], //gridview item sub title
+              gridViewItem[index].subTitle, //gridview item sub title
               style: TextStyle(
                   fontWeight: FontWeight.w600,
-                  color: grid_view_dark_color[index] //gridview item sub title
+                  color: gridViewItem[index]
+                      .darkColor //gridview item sub title(dark) color
                   ),
             )
           ],
